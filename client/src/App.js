@@ -4,10 +4,14 @@ import React from "react";
 function App() {
   const [data, setData] = React.useState(null);
 
-  React.useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
+  React.useEffect(() => {   
+    async function getData() {
+      let response = await fetch("/team/tottenham");
+      response = await response.json();
+      console.log(response.data);
+      setData(response.data.Team);
+    }
+    getData();
   }, []);
 
   return (
