@@ -1,8 +1,10 @@
 import './App.css';
 import React from "react";
+import NewComponent from './NewComponent';
 
 function App() {
   const [data, setData] = React.useState(null);
+  const [count, setCount] = React.useState(0);
 
   React.useEffect(() => {   
     async function getData() {
@@ -18,8 +20,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>{!data ? "Loading..." : data}</p>
+        <button onClick={() => setCount(count + 1)}>Clicked {count} times</button>
+        <NewComponent />
       </header>
     </div>
   );
 }
 export default App;
+
