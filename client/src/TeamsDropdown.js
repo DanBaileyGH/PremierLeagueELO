@@ -26,6 +26,7 @@ function TeamsDropdown() {
     return(
         <div>
             <select onChange={handleTeam}>
+                <option key="Select Team" value="Select Team">Select Team</option>
                 {teams.map((team) => <option key={team.Team} value={team.Team}>{team.Team}</option>)}
             </select>
             <br />
