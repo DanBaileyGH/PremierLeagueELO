@@ -6,6 +6,7 @@ module.exports = {
 	description: 'Returns team stats',
 	async execute(message, args) {
         return new Promise(resolve => {
+            console.log(args);
             if (args.length == 0){
                 resolve({"Error": "No Team Entered"});
                 return;

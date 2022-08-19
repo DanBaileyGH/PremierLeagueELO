@@ -16,8 +16,7 @@ app.get("/allTeamsList", async(req, res) => {
 });
 
 app.get("/team/:id", async(req, res) => {
-    let data = await teamCommand.getTeamData(req.params.id);
-    console.log(data.Team);
+    let data = await teamCommand.getTeamData([req.params.id]);
     res.json({data: data});
 })
 

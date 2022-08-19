@@ -1,8 +1,9 @@
 import './App.css';
 import React from "react";
+import TeamStats from './TeamStats';
 
 function TeamsDropdown() {
-    const [currentTeam, setCurrentTeam] = React.useState(null);
+    const [currentTeam, setCurrentTeam] = React.useState("Select Team");
     const [teams, setTeams] = React.useState(null);
 
     function handleTeam(team, index){
@@ -12,10 +13,7 @@ function TeamsDropdown() {
     React.useEffect(() => {   
         async function getAllTeams() {
             let response = await fetch("/allTeamsList");
-            console.log(response);
             response = await response.json();
-            console.log(response.data);
-            console.log(response.data[0].Team);
             setTeams(response.data);
         }
         getAllTeams();
@@ -30,7 +28,8 @@ function TeamsDropdown() {
                 {teams.map((team) => <option key={team.Team} value={team.Team}>{team.Team}</option>)}
             </select>
             <br />
-            {currentTeam ? currentTeam : "Select a Team"}
+            {(currentTeam && currentTeam !== "Select Team") ? currentTeam + " Team Stats" : "Select a Team"}
+            <TeamStats team={currentTeam} />
         </div>
     );
 }
