@@ -5,6 +5,7 @@ const client = new Discord.Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAG
 const fs = require('fs');
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
+const path = require('path');
 
 client.on('ready', function (evt) {
     console.log('ready');
@@ -13,10 +14,11 @@ client.on('ready', function (evt) {
 
 const prefix = "b!";
 
-const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
+const commandPath = path.dirname(__dirname);
+const commandFiles = fs.readdirSync(`${commandPath}/commands`).filter(file => file.endsWith('.js'));
 
 for (const file of commandFiles) {
-    const command = require(`./commands/${file}`);
+    const command = require(`${commandPath}/commands/${file}`);
     client.commands.set(command.name, command);
     if (command.aliases) {
         command.aliases.forEach(alias => {
@@ -38,7 +40,7 @@ client.on('messageCreate', async message => {
 
     console.log(message.author.username + ' used command: ' + command.name);
     try {
-        let output = await command.execute(message, args, client);
+        let output = await command.execute(message, args, Discord);
         message.channel.send(output);     
         //message.channel.send({embeds: (embed != null ?[embed] : null})
         if(command.name == "addgame") {

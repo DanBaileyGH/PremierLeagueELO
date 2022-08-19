@@ -39,7 +39,7 @@ module.exports = {
         })
         console.log(fullTeamsListObject);
         const data = JSON.stringify(fullTeamsListObject, null, 4);
-        let filePath = path.dirname(path.dirname(__dirname));
+        let filePath = path.dirname(__dirname);
         fs.writeFile(`${filePath}/teams.json`, data, (err) => {
             if (err) {
                 throw err;

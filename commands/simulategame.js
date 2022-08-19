@@ -26,8 +26,8 @@ module.exports = {
         }
 
         let eloWeighting = 40; //typical weighting for a league game
-        let team1WinChance = (1.0 / (1.0 + Math.pow(10, ((team2.ELO - (team1.ELO + 100)) / 400)))) //+100 home team handicap
-        let team2WinChance = (1.0 / (1.0 + Math.pow(10, (((team1.ELO + 100) - team2.ELO) / 400))))
+        let team1WinChance = (1.0 / (1.0 + Math.pow(10, ((team2.ELO - (team1.ELO + 68)) / 400)))) //+68 home team handicap
+        let team2WinChance = (1.0 / (1.0 + Math.pow(10, (((team1.ELO + 68) - team2.ELO) / 400))))
         let goalDifference = team1Score - team2Score;
         let positiveGoalDifference = Math.abs(goalDifference);
         let team1NewElo;

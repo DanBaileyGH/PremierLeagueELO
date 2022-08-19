@@ -4,7 +4,7 @@ const path = require("path");
 async function getAllTeams(){
     let teamsList = [];
     return new Promise(resolve => {
-        let filePath = path.dirname(path.dirname(__dirname));
+        let filePath = path.dirname(__dirname);
         fs.readFile(`${filePath}/teams.json`, 'utf8', (err, data) => {
             if (err) {
                 console.log("File read failed: ", err);

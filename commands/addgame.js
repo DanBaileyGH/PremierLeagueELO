@@ -105,7 +105,7 @@ async function saveNewStats(team1, team2) {
         newTeamsList.push(team);
     });
     console.log(newTeamsList);
-    let filePath = path.dirname(path.dirname(__dirname));
+    let filePath = path.dirname(__dirname);
     fs.writeFile(`${filePath}/teams.json`, data, (err) => {
         if (err) {
             throw err;
