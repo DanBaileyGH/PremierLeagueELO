@@ -25,7 +25,7 @@ module.exports = {
         let team2DecimalOdds = (1 / (team2WinChance / 100));
 
         let outputString = `team 1: ${team1.Team}, team 2: ${team2.Team}\n`;
-        outputString += `team 1 elo: ${team1.ELO}, team 2 elo: ${team2.ELO}\n`;
+        outputString += `team 1 elo: ${team1.ELO.toFixed(2)}, team 2 elo: ${team2.ELO.toFixed(2)}\n`;
         outputString += `team 1 win %: ${team1WinChance.toFixed(2)}, team 2 win %: ${team2WinChance.toFixed(2)} (team 1 +68 elo home advantage)\n`;
         outputString += `NOTE: this is technically the chances of a team winning plus half the chance of them drawing (eg 60% may be 40% chance of winning 40% chance of drawing, or 20% chance of winning 80% chance of drawing) theres no way of determining with raw elo. If using this data to bet, you would use the draw no bet markets\n`;
         outputString += `team 1 odds: ${team1DecimalOdds.toFixed(2)}, team 2 odds: ${team2DecimalOdds.toFixed(2)}\n`;

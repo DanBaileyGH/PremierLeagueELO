@@ -10,11 +10,9 @@ module.exports = {
         if (!teamData){
             message.channel.send("no team found"); 
             return
-        };
-        let teamString = JSON.stringify(teamData, null, 4);
-        console.log(teamString);
+        }
         return new Promise(resolve => {
-            resolve(teamString);
+            resolve(teamData);
         });
     }
 }

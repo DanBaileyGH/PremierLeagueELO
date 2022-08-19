@@ -70,6 +70,11 @@ module.exports = {
         let team2GoalsFor = team2.GoalsFor + parseInt(team2Score);
         let team2GoalsAgainst = team2.GoalsAgainst + parseInt(team1Score);
 
+        let outputString = `Game between ${team1.Team} (home) and ${team2.Team} (away)\n`;
+        outputString += `Inital ELOs - ${team1.ELO.toFixed(2)} - ${team2.ELO.toFixed(2)}\n`;
+        outputString += `Result - ${team1Score} - ${team2Score} \n`;
+        outputString += `New ELOs - ${team1NewElo.toFixed(2)} (change ${team1EloChange.toFixed(2)}) - ${team2NewElo.toFixed(2)} (change ${team2EloChange.toFixed(2)})`;
+
         //new stats
         team1.ELO = team1NewElo;
         team2.ELO = team2NewElo;
@@ -78,11 +83,6 @@ module.exports = {
         team2.GoalsFor = team2GoalsFor;
         team2.GoalsAgainst = team2GoalsAgainst;
 
-        let outputString = `Game between ${team1.Team} (home) and ${team2.Team} (away)\n`;
-        outputString += `Inital ELOs - ${team1.ELO.toFixed(2)} - ${team2.ELO.toFixed(2)}\n`;
-        outputString += `Result - ${team1Score} - ${team2Score} \n`;
-        outputString += `New ELOs - ${team1NewElo.toFixed(2)} (change ${team1EloChange.toFixed(2)}) - ${team2NewElo.toFixed(2)} (change ${team2EloChange.toFixed(2)})`;
-        
         return new Promise(resolve =>{
             resolve(outputString);
         });
