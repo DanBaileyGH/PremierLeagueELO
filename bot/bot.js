@@ -41,14 +41,12 @@ client.on('messageCreate', async message => {
     console.log(message.author.username + ' used command: ' + command.name);
     try {
         let output = await command.execute(message, args, Discord);
-        if (command.name == "team"){
-            output = JSON.stringify(output, null, 4);
-        }
+        output = JSON.stringify(output, null, 4);
         message.channel.send(output);     
 
         if(command.name == "addgame") {
             const ch = client.channels.cache.find(c => c.id == 1008454146229293228);
-            ch.send({files: ["teams.json"]});
+            ch.send({files: [`${commandPath}/teams.json`]});
         }
     } catch (error) {
         console.log(error);

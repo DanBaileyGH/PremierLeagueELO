@@ -3,6 +3,8 @@ module.exports = {
     aliases: ["p"],
 	description: 'Ping Pong',
 	async execute() {
-        return("pong.");
+        return new Promise(resolve => {
+            resolve({"response": "Pong"});
+        })
     }
 }

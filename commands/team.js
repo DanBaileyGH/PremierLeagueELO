@@ -5,14 +5,27 @@ module.exports = {
     aliases: ["t"],
 	description: 'Returns team stats',
 	async execute(message, args) {
-        let teamName = await globalFunctions.cleanName(args.join(","));
-        let teamData = await globalFunctions.getTeamData(teamName);
-        if (!teamData){
-            message.channel.send("no team found"); 
-            return
-        }
         return new Promise(resolve => {
-            resolve(teamData);
-        });
+            if (args.length == 0){
+                resolve({"Error": "No Team Entered"});
+                return;
+            }
+            resolve(getTeamData(args));
+        })
     }
 }
+
+async function getTeamData(teamName) {
+    console.log(teamName);
+    teamName = await globalFunctions.cleanName(teamName.join(","));
+    let teamData = await globalFunctions.getTeamData(teamName);
+    if (!teamData){
+        return new Promise(resolve => {
+            resolve({"Error": "Team Not Found"}); 
+        });
+    };
+    return new Promise(resolve => {
+        resolve(teamData);
+    });
+}
+module.exports.getTeamData = getTeamData;

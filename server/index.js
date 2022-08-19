@@ -1,11 +1,13 @@
 const express = require("express");
+const path = require('path');
 
 const PORT = 3001;
 
 let app = express();
 
-const teamCommand = require("./team.js");
-const globalFunctions = require('./globalFunctions.js');
+const commandPath = (path.dirname(__dirname) + "/commands");
+const teamCommand = require(`${commandPath}/team.js`);
+const globalFunctions = require(`${commandPath}/globalFunctions.js`);
 
 app.get("/allTeamsList", async(req, res) => {
     let data = await globalFunctions.getAllTeams();
