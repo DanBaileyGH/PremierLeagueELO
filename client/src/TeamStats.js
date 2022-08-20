@@ -23,11 +23,43 @@ function TeamStats(props) {
         await setTeamStats(response.data);
     }
 
-    if (!teamStats) return;
+    if (!teamStats) return <p>Loading...</p>;
 
     return(
         <div>
-            {Object.keys(teamStats).map((stat) => <p key={stat}>{stat} - {stat === "ELO"? teamStats[stat].toFixed(2) : teamStats[stat]}</p>)}
+            <br />
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Team</th>
+                        <th>{teamStats.Team}</th>
+                    </tr>
+                    <tr>
+                        <th>ELO Rating</th>
+                        <th>{teamStats.ELO.toFixed(2)}</th>
+                    </tr>
+                    <tr>
+                        <th>Wins</th>
+                        <th>{teamStats.Wins}</th>
+                    </tr>
+                    <tr>
+                        <th>Draws</th>
+                        <th>{teamStats.Draws}</th>
+                    </tr>
+                    <tr>
+                        <th>Losses</th>
+                        <th>{teamStats.Losses}</th>
+                    </tr>
+                    <tr>
+                        <th>Goals Scored</th>
+                        <th>{teamStats.GoalsFor}</th>
+                    </tr>
+                    <tr>
+                        <th>Goals Conceded</th>
+                        <th>{teamStats.GoalsAgainst}</th>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     );
 }

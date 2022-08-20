@@ -18,11 +18,39 @@ function PredictGame(props) {
         fetchPrediction(props);
     }
 
-    if(!result) return;
+    if(!result) return <p>Loading...</p>;
 
     return (
         <div>
-            {Object.keys(result).map((stat) => <p key={stat}>{stat} - {["homewinchance", "awaywinchance"].includes(stat) ? (result[stat] + "%") : result[stat]}</p>)}
+            <table>
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>Home</th>
+                        <th>Away</th>
+                    </tr>
+                    <tr>
+                        <th>Team</th>
+                        <th>{result.home}</th>
+                        <th>{result.away}</th>
+                    </tr>
+                    <tr>
+                        <th>ELO Rating</th>
+                        <th>{result.homeelo}</th>
+                        <th>{result.awayelo}</th>
+                    </tr>
+                    <tr>
+                        <th>Win %</th>
+                        <th>{result.homewinchance}</th>
+                        <th>{result.awaywinchance}</th>
+                    </tr>
+                    <tr>
+                        <th>Decimal Odds</th>
+                        <th>{result.homeodds}</th>
+                        <th>{result.awayodds}</th>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     );
 }

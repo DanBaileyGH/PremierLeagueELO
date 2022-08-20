@@ -23,15 +23,15 @@ function PredictGame() {
         getAllTeams();
     }, []);
 
-    if (!teams) return; //if api data hasnt loaded yet dont send component
+    if (!teams) return <p>Loading...</p>; //if api data hasnt loaded yet dont send component
 
     return (
         <div>
-            <select onChange={handleHomeTeam}>
+            <select onChange={handleHomeTeam} class="dropdown">
                 <option key="Select Home Team" value="Select Home Team">Select Home Team</option>
                 {teams.map((team) => <option key={team.Team} value={team.Team}>{team.Team}</option>)}
             </select>
-            <select onChange={handleAwayTeam}>
+            <select onChange={handleAwayTeam} class="dropdown">
                 <option key="Select Away Team" value="Select Away Team">Select Away Team</option>
                 {teams.map((team) => <option key={team.Team} value={team.Team}>{team.Team}</option>)}
             </select>

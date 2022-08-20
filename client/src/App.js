@@ -19,10 +19,10 @@ function App() {
     return (
       <div className="App">     
         <header className="App-header">
-          <button onClick={teamStatsClicked}>View a Team's Stats</button>
-          <br></br>
-          <button onClick={predictGameClicked}>Predict a Game Result</button>
-          <br></br>
+          <div class="btn-group">
+            <button onClick={teamStatsClicked}>View a Team's Stats</button>
+            <button onClick={predictGameClicked}>Predict a Game Result</button>
+          </div>
           <TeamStatsSelect />
         </header>
       </div>
@@ -31,10 +31,10 @@ function App() {
     return(
       <div className="App">     
         <header className="App-header">
-          <button onClick={teamStatsClicked}>View a Team's Stats</button>
-          <br></br>
-          <button onClick={predictGameClicked}>Predict a Game Result</button>
-          <br></br>
+          <div class="btn-group">
+            <button onClick={teamStatsClicked}>View a Team's Stats</button>
+            <button onClick={predictGameClicked}>Predict a Game Result</button>
+          </div>
           <PredictGame />
         </header>
       </div>
@@ -44,10 +44,10 @@ function App() {
       <div className="app">
         <header className="App-header">
           <h1>Home Page</h1>
-          <button onClick={teamStatsClicked}>View a Team's Stats</button>
-          <br></br>
-          <button onClick={predictGameClicked}>Predict a Game Result</button>
-          <br></br>
+          <div class="btn-group">
+            <button onClick={teamStatsClicked}>View a Team's Stats</button>
+            <button onClick={predictGameClicked}>Predict a Game Result</button>
+          </div>
         </header>
       </div>
     )
