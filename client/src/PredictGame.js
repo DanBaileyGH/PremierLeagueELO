@@ -1,12 +1,11 @@
 import './App.css';
 import React from "react";
+import PredictionCalculation from './PredictionCalculation';
 
 function PredictGame() {
     const [teams, setTeams] = React.useState(null);
     const [homeTeamName, setHomeTeamName] = React.useState(null);
-    const [homeTeamStats, setHomeTeamStats] = React.useState(null);
     const [awayTeamName, setAwayTeamName] = React.useState(null);
-    const [awayTeamStats, setAwayTeamStats] = React.useState(null);
 
     function handleHomeTeam(team) {
         setHomeTeamName(team.target.value);
@@ -32,11 +31,11 @@ function PredictGame() {
                 <option key="Select Home Team" value="Select Home Team">Select Home Team</option>
                 {teams.map((team) => <option key={team.Team} value={team.Team}>{team.Team}</option>)}
             </select>
-            
             <select onChange={handleAwayTeam}>
                 <option key="Select Away Team" value="Select Away Team">Select Away Team</option>
                 {teams.map((team) => <option key={team.Team} value={team.Team}>{team.Team}</option>)}
             </select>
+            <PredictionCalculation homeTeam={homeTeamName} awayTeam={awayTeamName}/>
         </div>
     )
 }

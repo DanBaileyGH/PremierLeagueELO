@@ -68,7 +68,6 @@ async function cleanArray(uncleanArray) {
     let cleanedString = await cleanName(uncleanArray.join(" "));
     splitArray = cleanedString.split("-"); //unsure why this cant be one line
     return new Promise(resolve => {
-        console.log(splitArray);
         resolve(splitArray);
     })
 }

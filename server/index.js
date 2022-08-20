@@ -7,6 +7,7 @@ let app = express();
 
 const commandPath = (path.dirname(__dirname) + "/commands");
 const teamCommand = require(`${commandPath}/team.js`);
+const predictCommand = require(`${commandPath}/predict.js`);
 const globalFunctions = require(`${commandPath}/globalFunctions.js`);
 
 app.get("/allTeamsList", async(req, res) => {
@@ -20,6 +21,11 @@ app.get("/team/:id", async(req, res) => {
     res.json({data: data});
 })
 
+app.get("/predict/:args", async(req, res) => {
+    let data = await predictCommand.predictGame(req.params.args.split(","));
+    res.json({data: data});
+});
+
 app.listen(PORT, () => {
     console.log(`server listening on ${PORT}`);
-})
+});
