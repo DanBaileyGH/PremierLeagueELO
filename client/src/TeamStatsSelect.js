@@ -2,7 +2,7 @@ import './App.css';
 import React from "react";
 import TeamStats from './TeamStats';
 
-function TeamsDropdown() {
+function TeamStatsSelect() {
     const [currentTeam, setCurrentTeam] = React.useState("Select Team");
     const [teams, setTeams] = React.useState(null);
 
@@ -33,4 +33,4 @@ function TeamsDropdown() {
         </div>
     );
 }
-export default TeamsDropdown;
+export default TeamStatsSelect;

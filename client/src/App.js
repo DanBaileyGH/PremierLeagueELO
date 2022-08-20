@@ -1,18 +1,58 @@
 import './App.css';
 import React from "react";
-import TeamsDropdown from './TeamsDropdown';
+import TeamStatsSelect from './TeamStatsSelect';
+import PredictGame from './PredictGame';
 
 function App() {
-  const [count, setCount] = React.useState(0);
+  const [page, setPage] = React.useState(null);
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <button onClick={() => setCount(count + 1)}>Clicked {count} times</button>
-        <TeamsDropdown />
-      </header>
-    </div>
-  );
+  function teamStatsClicked(){
+    setPage("viewTeamStats")
+  }
+  function predictGameClicked(){
+    setPage("viewPredictGame");
+  }
+
+  console.log(page);
+
+  if (page === "viewTeamStats") {
+    return (
+      <div className="App">     
+        <header className="App-header">
+          <button onClick={teamStatsClicked}>View A Team's Stats</button>
+          <br></br>
+          <button onClick={predictGameClicked}>Predict A Game Result</button>
+          <br></br>
+          <TeamStatsSelect />
+        </header>
+      </div>
+    );
+  } else if (page === "viewPredictGame"){
+    return(
+      <div className="App">     
+        <header className="App-header">
+          <button onClick={teamStatsClicked}>View A Team's Stats</button>
+          <br></br>
+          <button onClick={predictGameClicked}>Predict A Game Result</button>
+          <br></br>
+          <PredictGame />
+        </header>
+      </div>
+    )
+  } else {
+    return (
+      <div className="app">
+        <header className="App-header">
+          <h1>Home Page</h1>
+          <button onClick={teamStatsClicked}>View A Team's Stats</button>
+          <br></br>
+          <button onClick={predictGameClicked}>Predict A Game Result</button>
+          <br></br>
+        </header>
+      </div>
+    )
+  }
+  
 }
 export default App;
 

@@ -27,7 +27,7 @@ function TeamStats(props) {
 
     return(
         <div>
-            {Object.keys(teamStats).map((stat) => <p key={stat}>{stat} {stat == "ELO"? teamStats[stat].toFixed(2) : teamStats[stat]}</p>)}
+            {Object.keys(teamStats).map((stat) => <p key={stat}>{stat} - {stat === "ELO"? teamStats[stat].toFixed(2) : teamStats[stat]}</p>)}
         </div>
     );
 }

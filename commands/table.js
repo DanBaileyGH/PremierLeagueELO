@@ -30,7 +30,6 @@ async function getTable(args) {
             "name": team.Team, 
             sortingStat: team[sortingStat].toFixed(0)
         });
-        console.log(outputObject);
         outputArray.push(outputObject);
     });
     console.log(outputArray);

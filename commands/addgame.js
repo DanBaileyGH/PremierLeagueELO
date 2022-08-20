@@ -126,7 +126,6 @@ async function saveNewStats(team1, team2) {
         }
         newTeamsList.push(team);
     });
-    console.log(newTeamsList);
     const data = JSON.stringify(newTeamsList, null, 4);
     let filePath = path.dirname(__dirname);
     fs.writeFile(`${filePath}/teams.json`, data, (err) => {
