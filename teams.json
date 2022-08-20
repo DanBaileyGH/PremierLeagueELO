@@ -19,11 +19,11 @@
     },
     {
         "Team": "Arsenal",
-        "ELO": 1902.2086886230716,
-        "Wins": 2,
+        "ELO": 1921.981193282461,
+        "Wins": 3,
         "Losses": 0,
         "Draws": 0,
-        "GoalsFor": 6,
+        "GoalsFor": 9,
         "GoalsAgainst": 2
     },
     {
@@ -154,12 +154,12 @@
     },
     {
         "Team": "Bournemouth",
-        "ELO": 1672.2567544288224,
+        "ELO": 1652.484249769433,
         "Wins": 1,
-        "Losses": 1,
+        "Losses": 2,
         "Draws": 0,
         "GoalsFor": 2,
-        "GoalsAgainst": 4
+        "GoalsAgainst": 7
     },
     {
         "Team": "Fulham",

@@ -19,9 +19,9 @@ function App() {
     return (
       <div className="App">     
         <header className="App-header">
-          <button onClick={teamStatsClicked}>View A Team's Stats</button>
+          <button onClick={teamStatsClicked}>View a Team's Stats</button>
           <br></br>
-          <button onClick={predictGameClicked}>Predict A Game Result</button>
+          <button onClick={predictGameClicked}>Predict a Game Result</button>
           <br></br>
           <TeamStatsSelect />
         </header>
@@ -31,9 +31,9 @@ function App() {
     return(
       <div className="App">     
         <header className="App-header">
-          <button onClick={teamStatsClicked}>View A Team's Stats</button>
+          <button onClick={teamStatsClicked}>View a Team's Stats</button>
           <br></br>
-          <button onClick={predictGameClicked}>Predict A Game Result</button>
+          <button onClick={predictGameClicked}>Predict a Game Result</button>
           <br></br>
           <PredictGame />
         </header>
@@ -44,15 +44,14 @@ function App() {
       <div className="app">
         <header className="App-header">
           <h1>Home Page</h1>
-          <button onClick={teamStatsClicked}>View A Team's Stats</button>
+          <button onClick={teamStatsClicked}>View a Team's Stats</button>
           <br></br>
-          <button onClick={predictGameClicked}>Predict A Game Result</button>
+          <button onClick={predictGameClicked}>Predict a Game Result</button>
           <br></br>
         </header>
       </div>
     )
   }
-  
 }
 export default App;
 
