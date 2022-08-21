@@ -1,7 +1,7 @@
 import './App.css';
 import React from "react";
 
-function PredictGame(props) {
+function PredictionCalculation(props) {
     const [result, setResult] = React.useState(null);
     if (!props.homeTeam || props.homeTeam === "Select Team") return;
     if (!props.awayTeam || props.awayTeam === "Select Team") return;
@@ -54,4 +54,4 @@ function PredictGame(props) {
         </div>
     );
 }
-export default PredictGame;
+export default PredictionCalculation;

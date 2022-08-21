@@ -37,6 +37,6 @@ function PredictGame() {
             </select>
             <PredictionCalculation homeTeam={homeTeamName} awayTeam={awayTeamName}/>
         </div>
-    )
+    );
 }
 export default PredictGame;

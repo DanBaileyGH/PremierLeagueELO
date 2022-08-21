@@ -10,6 +10,7 @@ const teamCommand = require(`${commandPath}/team.js`);
 const predictCommand = require(`${commandPath}/predict.js`);
 const globalFunctions = require(`${commandPath}/globalFunctions.js`);
 const sortCommand = require(`${commandPath}/table.js`);
+const simulateCommand = require(`${commandPath}/simulategame.js`);
 
 app.get("/allTeamsList", async(req, res) => {
     let data = await globalFunctions.getAllTeams();
@@ -29,6 +30,11 @@ app.get("/predict/:args", async(req, res) => {
 
 app.get("/sorted/:stat", async (req, res) => {
     let data = await sortCommand.getTable([req.params.stat]);
+    res.json({data: data});
+});
+
+app.get("/simulate/:args", async(req, res) => {
+    let data = await simulateCommand.simulateGame(req.params.args.split(","));
     res.json({data: data});
 });
 

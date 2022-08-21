@@ -46,7 +46,7 @@ async function simulateGame(args) {
     } else if(positiveGoalDifference == 3) {
         eloWeighting = eloWeighting * 1.75;
     } else if(positiveGoalDifference > 3) {
-        eloWeighting = eloWeighting + (0.75 + ((positiveGoalDifference - 3) / 8));
+        eloWeighting = eloWeighting * (1 + (0.75 + ((positiveGoalDifference - 3) / 8)));
     }
     let team1Multiplier = 0.5;
 

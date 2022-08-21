@@ -2,7 +2,7 @@ import './App.css';
 import React from "react";
 
 function PredictGame() {
-    const [sortingStat, setSortingStat] = React.useState("ELO");
+    //const [sortingStat, setSortingStat] = React.useState("ELO");
     const [teams, setTeams] = React.useState(null);
 
     React.useEffect(() => {   
@@ -20,7 +20,7 @@ function PredictGame() {
 
     return (
         <div>
-            <h2>Sorted by {sortingStat}</h2>
+            <h2>Sorted by ELO</h2>
             <table>
                 <tbody>
                     <tr>
