@@ -14,6 +14,7 @@ module.exports = {
 
 async function getTable(args) {
     let sortingStat = args.length > 0 ? args.join(","): "ELO"; //default to sorting by elo
+    console.log(sortingStat);
     let validStats = ["Team", "ELO", "Wins", "Losses", "Draws", "GoalsFor", "GoalsAgainst"] //todo: automate this by checking field names in teams.json
     if (!(validStats.includes(sortingStat))) { //invalid stat to sort by
         return new Promise(resolve => {
@@ -22,19 +23,9 @@ async function getTable(args) {
     }
     let allTeamsList = await globalFunctions.getAllTeams();
     let sortedTeams = await globalFunctions.sortTable(allTeamsList, sortingStat);
-    let outputArray = [];
-    let outputObject;
-    sortedTeams.forEach(function (team, i){
-        outputObject = ({
-            "rank": i + 1,
-            "name": team.Team, 
-            sortingStat: team[sortingStat].toFixed(0)
-        });
-        outputArray.push(outputObject);
-    });
-    console.log(outputArray);
+    console.log(sortedTeams);
     return new Promise(resolve => {
-        resolve(outputArray);
+        resolve(sortedTeams);
     });
 }
 module.exports.getTable = getTable;

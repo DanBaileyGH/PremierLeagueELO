@@ -84,16 +84,6 @@ async function addGame(args) {
     let team2GoalsFor = team2.GoalsFor + parseInt(team2Score);
     let team2GoalsAgainst = team2.GoalsAgainst + parseInt(team1Score);
 
-    //new stats
-    team1.ELO = team1NewElo;
-    team2.ELO = team2NewElo;
-    team1.GoalsFor = team1GoalsFor;
-    team1.GoalsAgainst = team1GoalsAgainst;
-    team2.GoalsFor = team2GoalsFor;
-    team2.GoalsAgainst = team2GoalsAgainst;
-
-    saveNewStats(team1, team2);
-
     let outputObject = ({
         "home": team1.Team,
         "away": team2.Team,
@@ -107,6 +97,16 @@ async function addGame(args) {
         "awaychange": team2EloChange.toFixed(2)
     });
     
+    //new stats
+    team1.ELO = team1NewElo;
+    team2.ELO = team2NewElo;
+    team1.GoalsFor = team1GoalsFor;
+    team1.GoalsAgainst = team1GoalsAgainst;
+    team2.GoalsFor = team2GoalsFor;
+    team2.GoalsAgainst = team2GoalsAgainst;
+
+    saveNewStats(team1, team2);
+
     return new Promise(resolve =>{
         resolve(outputObject);
     });
