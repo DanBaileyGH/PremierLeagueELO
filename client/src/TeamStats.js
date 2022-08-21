@@ -43,12 +43,12 @@ function TeamStats(props) {
                         <th>{teamStats.Wins}</th>
                     </tr>
                     <tr>
-                        <th>Draws</th>
-                        <th>{teamStats.Draws}</th>
-                    </tr>
-                    <tr>
                         <th>Losses</th>
                         <th>{teamStats.Losses}</th>
+                    </tr>
+                    <tr>
+                        <th>Draws</th>
+                        <th>{teamStats.Draws}</th>
                     </tr>
                     <tr>
                         <th>Goals Scored</th>

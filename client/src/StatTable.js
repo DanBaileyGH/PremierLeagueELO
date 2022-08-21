@@ -28,8 +28,8 @@ function PredictGame() {
                         <th>Team</th>
                         <th>Elo</th>
                         <th>Wins</th>
-                        <th>Draws</th>
                         <th>Losses</th>
+                        <th>Draws</th>
                         <th>Goals Scored</th>
                         <th>Goals Conceded</th>
                     </tr>
