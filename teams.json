@@ -10,12 +10,12 @@
     },
     {
         "Team": "Liverpool",
-        "ELO": 1997.9985598577516,
+        "ELO": 1968.7073783746332,
         "Wins": 0,
-        "Losses": 0,
+        "Losses": 1,
         "Draws": 2,
-        "GoalsFor": 3,
-        "GoalsAgainst": 3
+        "GoalsFor": 4,
+        "GoalsAgainst": 5
     },
     {
         "Team": "Arsenal",
@@ -46,12 +46,12 @@
     },
     {
         "Team": "Manchester United",
-        "ELO": 1755.2004274420942,
-        "Wins": 0,
+        "ELO": 1784.4916089252126,
+        "Wins": 1,
         "Losses": 2,
         "Draws": 0,
-        "GoalsFor": 1,
-        "GoalsAgainst": 6
+        "GoalsFor": 3,
+        "GoalsAgainst": 7
     },
     {
         "Team": "West Ham",

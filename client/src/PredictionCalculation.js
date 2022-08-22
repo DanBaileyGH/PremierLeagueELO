@@ -31,23 +31,23 @@ function PredictionCalculation(props) {
                     </tr>
                     <tr>
                         <th>Team</th>
-                        <th>{result.home}</th>
-                        <th>{result.away}</th>
+                        <td>{result.home}</td>
+                        <td>{result.away}</td>
                     </tr>
                     <tr>
                         <th>ELO Rating</th>
-                        <th>{result.homeelo}</th>
-                        <th>{result.awayelo}</th>
+                        <td>{result.homeelo}</td>
+                        <td>{result.awayelo}</td>
                     </tr>
                     <tr>
                         <th>Win %</th>
-                        <th>{result.homewinchance}</th>
-                        <th>{result.awaywinchance}</th>
+                        <td>{result.homewinchance}</td>
+                        <td>{result.awaywinchance}</td>
                     </tr>
                     <tr>
-                        <th>Decimal Odds</th>
-                        <th>{result.homeodds}</th>
-                        <th>{result.awayodds}</th>
+                        <td>Decimal Odds</td>
+                        <td>{result.homeodds}</td>
+                        <td>{result.awayodds}</td>
                     </tr>
                 </tbody>
             </table>

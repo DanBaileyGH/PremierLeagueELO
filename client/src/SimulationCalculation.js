@@ -33,28 +33,28 @@ function SimulationCalculation(props) {
                     </tr>
                     <tr>
                         <th>Team</th>
-                        <th>{result.home}</th>
-                        <th>{result.away}</th>
+                        <td>{result.home}</td>
+                        <td>{result.away}</td>
                     </tr>
                     <tr>
                         <th>Score</th>
-                        <th>{result.homescore}</th>
-                        <th>{result.awayscore}</th>
+                        <td>{result.homescore}</td>
+                        <td>{result.awayscore}</td>
                     </tr>
                     <tr>
                         <th>Initial ELO Rating</th>
-                        <th>{result.homeinit}</th>
-                        <th>{result.awayinit}</th>
+                        <td>{result.homeinit}</td>
+                        <td>{result.awayinit}</td>
                     </tr>
                     <tr>
                         <th>New ELO Rating</th>
-                        <th>{result.homenew}</th>
-                        <th>{result.awaynew}</th>
+                        <td>{result.homenew}</td>
+                        <td>{result.awaynew}</td>
                     </tr>
                     <tr>
                         <th>ELO Change</th>
-                        <th>{result.homechange}</th>
-                        <th>{result.awaychange}</th>
+                        <td>{result.homechange}</td>
+                        <td>{result.awaychange}</td>
                     </tr>
                 </tbody>
             </table>

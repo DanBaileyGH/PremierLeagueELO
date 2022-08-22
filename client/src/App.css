@@ -42,8 +42,12 @@ th, td {
   border: 2px solid #FFF;
 }
 
-tr:nth-child(even) {
+tr:nth-child(odd) {
   background-color: #303038;
+}
+
+tr:nth-child(even) {
+  background-color: #282a34;
 }
 
 table {
@@ -52,5 +56,10 @@ table {
 }
 
 .empty-th {
+  background-color: #282c34;
   border: 0px;
+}
+
+h2 {
+  font-size: 25pt;
 }

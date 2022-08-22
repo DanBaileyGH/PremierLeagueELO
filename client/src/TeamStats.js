@@ -35,27 +35,27 @@ function TeamStats(props) {
                     </tr>
                     <tr>
                         <th>ELO Rating</th>
-                        <th>{teamStats.ELO.toFixed(2)}</th>
+                        <td>{teamStats.ELO.toFixed(2)}</td>
                     </tr>
                     <tr>
                         <th>Wins</th>
-                        <th>{teamStats.Wins}</th>
+                        <td>{teamStats.Wins}</td>
                     </tr>
                     <tr>
                         <th>Losses</th>
-                        <th>{teamStats.Losses}</th>
+                        <td>{teamStats.Losses}</td>
                     </tr>
                     <tr>
                         <th>Draws</th>
-                        <th>{teamStats.Draws}</th>
+                        <td>{teamStats.Draws}</td>
                     </tr>
                     <tr>
                         <th>Goals Scored</th>
-                        <th>{teamStats.GoalsFor}</th>
+                        <td>{teamStats.GoalsFor}</td>
                     </tr>
                     <tr>
                         <th>Goals Conceded</th>
-                        <th>{teamStats.GoalsAgainst}</th>
+                        <td>{teamStats.GoalsAgainst}</td>
                     </tr>
                 </tbody>
             </table>

@@ -35,7 +35,7 @@ function PredictGame() {
                     </tr>
                     {teams.map((team, index) => <tr key={team.Team}>
                         <th>{index + 1}</th>
-                        {Object.keys(team).map((stat) => <th>{stat === "ELO" ? team[stat].toFixed(2) : team[stat]}</th>)}
+                        {Object.keys(team).map((stat) => <td>{stat === "ELO" ? team[stat].toFixed(2) : team[stat]}</td>)}
                     </tr>)}
                 </tbody>
             </table>
