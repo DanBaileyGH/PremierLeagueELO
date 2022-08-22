@@ -36,6 +36,7 @@ function App() {
     return (
       <div className="App">     
         <header className="App-header">
+          <h1> Full Team Stats </h1>
           {menuButtonGroup}
           <TeamStatsSelect />
         </header>
@@ -45,6 +46,7 @@ function App() {
     return(
       <div className="App">     
         <header className="App-header">
+          <h1>Predict A Game</h1>
           {menuButtonGroup}
           <PredictGame />
         </header>
@@ -54,6 +56,7 @@ function App() {
     return(
       <div className="App">     
         <header className="App-header">
+          <h1>Full League Table</h1>
           {menuButtonGroup}
           <StatTable />
         </header>
@@ -63,6 +66,7 @@ function App() {
     return(
       <div className="App">     
         <header className="App-header">
+          <h1>Simulate a Game</h1>
           {menuButtonGroup}
           <SimulateGame />
         </header>
@@ -72,6 +76,7 @@ function App() {
     return (
       <div className="app">
         <header className="App-header">
+          <br/>
           <h1>Home Page</h1>
           {menuButtonGroup}
         </header>

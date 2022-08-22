@@ -25,7 +25,7 @@ function PredictionCalculation(props) {
             <table>
                 <tbody>
                     <tr>
-                        <th></th>
+                        <th className="empty-th"></th>
                         <th>Home</th>
                         <th>Away</th>
                     </tr>

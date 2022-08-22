@@ -39,6 +39,18 @@
 
 th, td {
   padding: 12px;
-  border-bottom: 2px solid #FFF;
-  border-right: 2px solid #FFF;
+  border: 2px solid #FFF;
+}
+
+tr:nth-child(even) {
+  background-color: #303038;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px 0px;
+}
+
+.empty-th {
+  border: 0px;
 }

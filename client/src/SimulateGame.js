@@ -24,7 +24,7 @@ function PredictGame() {
 
     React.useEffect(() => {   
         async function getAllTeams() {
-            let response = await fetch("/sorted/ELO");
+            let response = await fetch("/allTeamsList");
             response = await response.json();
             setTeams(response.data);
         }

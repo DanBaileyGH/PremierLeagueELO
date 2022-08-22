@@ -27,7 +27,6 @@ function TeamStats(props) {
 
     return(
         <div>
-            <br />
             <table>
                 <tbody>
                     <tr>
