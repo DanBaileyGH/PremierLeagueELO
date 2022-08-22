@@ -37,7 +37,7 @@ function PredictGame() {
     return (
         <div>
             <h2>Sorted by {sortingStat}</h2> 
-            <button onClick={reverseTable}>Reverse Order</button>
+            <p>Click a Column Title to Sort</p>
             <table>
                 <tbody>
                     <tr>

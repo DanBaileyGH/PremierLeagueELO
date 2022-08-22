@@ -66,4 +66,10 @@ th {
 
 h2 {
   font-size: 25pt;
+  margin-bottom: 0px;
+}
+
+p {
+  margin-top: 0px;
+  font-size: 16pt;
 }
