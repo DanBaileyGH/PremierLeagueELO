@@ -60,6 +60,10 @@ table {
   border: 0px;
 }
 
+th {
+  cursor: pointer;
+}
+
 h2 {
   font-size: 25pt;
 }
