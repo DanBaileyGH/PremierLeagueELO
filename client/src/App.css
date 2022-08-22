@@ -43,7 +43,7 @@ th, td {
 }
 
 tr:nth-child(odd) {
-  background-color: #303038;
+  background-color: #383a42;
 }
 
 tr:nth-child(even) {
