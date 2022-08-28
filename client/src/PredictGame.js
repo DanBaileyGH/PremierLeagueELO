@@ -27,11 +27,11 @@ function PredictGame() {
 
     return (
         <div>
-            <select onChange={handleHomeTeam} class="dropdown">
+            <select onChange={handleHomeTeam} className="dropdown">
                 <option key="Select Home Team" value="Select Home Team">Select Home Team</option>
                 {teams.map((team) => <option key={team.Team} value={team.Team}>{team.Team}</option>)}
             </select>
-            <select onChange={handleAwayTeam} class="dropdown">
+            <select onChange={handleAwayTeam} className="dropdown">
                 <option key="Select Away Team" value="Select Away Team">Select Away Team</option>
                 {teams.map((team) => <option key={team.Team} value={team.Team}>{team.Team}</option>)}
             </select>

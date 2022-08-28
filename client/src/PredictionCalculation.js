@@ -1,5 +1,6 @@
 import './App.css';
 import React from "react";
+import PredictionExplanation from './PredictionExplanation';
 
 function PredictionCalculation(props) {
     const [result, setResult] = React.useState(null);
@@ -45,12 +46,13 @@ function PredictionCalculation(props) {
                         <td>{result.awaywinchance}</td>
                     </tr>
                     <tr>
-                        <td>Decimal Odds</td>
+                        <th>Decimal Odds</th>
                         <td>{result.homeodds}</td>
                         <td>{result.awayodds}</td>
                     </tr>
                 </tbody>
             </table>
+            <PredictionExplanation />
         </div>
     );
 }

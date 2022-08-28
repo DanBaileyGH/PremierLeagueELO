@@ -73,3 +73,19 @@ p {
   margin-top: 0px;
   font-size: 16pt;
 }
+
+.explanation-dropdown {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  color: rgb(0, 160, 240);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 16pt;
+  margin-bottom: 5pt;
+}
+
+.explanation-text {
+  font-size: 12pt;
+  width: 75vh;
+}
