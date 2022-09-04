@@ -1,182 +1,182 @@
 [
     {
         "Team": "Manchester City",
-        "ELO": 2045.1693047053684,
-        "Wins": 3,
-        "Losses": 0,
-        "Draws": 1,
-        "GoalsFor": 13,
-        "GoalsAgainst": 5
-    },
-    {
-        "Team": "Liverpool",
-        "ELO": 1978.5772636043139,
-        "Wins": 1,
-        "Losses": 1,
-        "Draws": 2,
-        "GoalsFor": 13,
-        "GoalsAgainst": 5
-    },
-    {
-        "Team": "Arsenal",
-        "ELO": 1927.8827912852146,
+        "ELO": 2035.1078823023174,
         "Wins": 4,
         "Losses": 0,
-        "Draws": 0,
-        "GoalsFor": 11,
-        "GoalsAgainst": 3
-    },
-    {
-        "Team": "Tottenham",
-        "ELO": 1911.0826087227433,
-        "Wins": 3,
-        "Losses": 0,
-        "Draws": 1,
-        "GoalsFor": 9,
-        "GoalsAgainst": 3
-    },
-    {
-        "Team": "Chelsea",
-        "ELO": 1872.9737899132979,
-        "Wins": 2,
-        "Losses": 1,
-        "Draws": 1,
-        "GoalsFor": 5,
+        "Draws": 2,
+        "GoalsFor": 20,
         "GoalsAgainst": 6
     },
     {
-        "Team": "Manchester United",
-        "ELO": 1802.6343848468614,
+        "Team": "Liverpool",
+        "ELO": 1973.9407306194337,
         "Wins": 2,
-        "Losses": 2,
+        "Losses": 1,
+        "Draws": 3,
+        "GoalsFor": 15,
+        "GoalsAgainst": 6
+    },
+    {
+        "Team": "Arsenal",
+        "ELO": 1899.3486320267293,
+        "Wins": 5,
+        "Losses": 1,
         "Draws": 0,
-        "GoalsFor": 4,
+        "GoalsFor": 14,
         "GoalsAgainst": 7
     },
     {
-        "Team": "West Ham",
-        "ELO": 1728.6736348049872,
-        "Wins": 1,
-        "Losses": 3,
-        "Draws": 0,
-        "GoalsFor": 1,
+        "Team": "Tottenham",
+        "ELO": 1911.758599215752,
+        "Wins": 4,
+        "Losses": 0,
+        "Draws": 2,
+        "GoalsFor": 12,
         "GoalsAgainst": 5
     },
     {
-        "Team": "Wolves",
-        "ELO": 1690.0285737695863,
-        "Wins": 0,
+        "Team": "Chelsea",
+        "ELO": 1855.9240104923615,
+        "Wins": 3,
         "Losses": 2,
-        "Draws": 2,
-        "GoalsFor": 2,
+        "Draws": 1,
+        "GoalsFor": 8,
+        "GoalsAgainst": 9
+    },
+    {
+        "Team": "Manchester United",
+        "ELO": 1855.2745288907433,
+        "Wins": 4,
+        "Losses": 2,
+        "Draws": 0,
+        "GoalsFor": 8,
+        "GoalsAgainst": 8
+    },
+    {
+        "Team": "West Ham",
+        "ELO": 1724.4818310375242,
+        "Wins": 1,
+        "Losses": 4,
+        "Draws": 1,
+        "GoalsFor": 3,
+        "GoalsAgainst": 8
+    },
+    {
+        "Team": "Wolves",
+        "ELO": 1707.4790650174687,
+        "Wins": 1,
+        "Losses": 2,
+        "Draws": 3,
+        "GoalsFor": 3,
         "GoalsAgainst": 4
     },
     {
         "Team": "Leicester City",
-        "ELO": 1715.4837209626803,
+        "ELO": 1678.445847746325,
         "Wins": 0,
-        "Losses": 3,
+        "Losses": 5,
         "Draws": 1,
-        "GoalsFor": 6,
-        "GoalsAgainst": 10
-    },
-    {
-        "Team": "Brentford",
-        "ELO": 1716.4400821071306,
-        "Wins": 1,
-        "Losses": 1,
-        "Draws": 2,
         "GoalsFor": 8,
-        "GoalsAgainst": 5
-    },
-    {
-        "Team": "Aston Villa",
-        "ELO": 1665.9314473516215,
-        "Wins": 1,
-        "Losses": 3,
-        "Draws": 0,
-        "GoalsFor": 3,
-        "GoalsAgainst": 7
-    },
-    {
-        "Team": "Newcastle United",
-        "ELO": 1788.4864167796325,
-        "Wins": 1,
-        "Losses": 0,
-        "Draws": 3,
-        "GoalsFor": 6,
-        "GoalsAgainst": 4
-    },
-    {
-        "Team": "Brighton",
-        "ELO": 1836.0717247106925,
-        "Wins": 3,
-        "Losses": 0,
-        "Draws": 1,
-        "GoalsFor": 5,
-        "GoalsAgainst": 1
-    },
-    {
-        "Team": "Crystal Palace",
-        "ELO": 1749.8806026789389,
-        "Wins": 1,
-        "Losses": 2,
-        "Draws": 1,
-        "GoalsFor": 6,
-        "GoalsAgainst": 8
-    },
-    {
-        "Team": "Everton",
-        "ELO": 1668.0063427166413,
-        "Wins": 0,
-        "Losses": 2,
-        "Draws": 2,
-        "GoalsFor": 1,
-        "GoalsAgainst": 3
-    },
-    {
-        "Team": "Leeds United",
-        "ELO": 1759.8983622256542,
-        "Wins": 2,
-        "Losses": 1,
-        "Draws": 1,
-        "GoalsFor": 5,
-        "GoalsAgainst": 3
-    },
-    {
-        "Team": "Southampton",
-        "ELO": 1665.9923258297445,
-        "Wins": 1,
-        "Losses": 2,
-        "Draws": 1,
-        "GoalsFor": 5,
-        "GoalsAgainst": 8
-    },
-    {
-        "Team": "Bournemouth",
-        "ELO": 1642.6143645397524,
-        "Wins": 1,
-        "Losses": 3,
-        "Draws": 0,
-        "GoalsFor": 2,
         "GoalsAgainst": 16
     },
     {
-        "Team": "Fulham",
-        "ELO": 1679.3738340699979,
+        "Team": "Brentford",
+        "ELO": 1753.2239825643358,
+        "Wins": 2,
+        "Losses": 1,
+        "Draws": 3,
+        "GoalsFor": 14,
+        "GoalsAgainst": 8
+    },
+    {
+        "Team": "Aston Villa",
+        "ELO": 1675.2773258094903,
+        "Wins": 1,
+        "Losses": 4,
+        "Draws": 1,
+        "GoalsFor": 5,
+        "GoalsAgainst": 10
+    },
+    {
+        "Team": "Newcastle United",
+        "ELO": 1775.2420428168416,
         "Wins": 1,
         "Losses": 1,
-        "Draws": 2,
-        "GoalsFor": 6,
+        "Draws": 4,
+        "GoalsFor": 7,
         "GoalsAgainst": 6
     },
     {
-        "Team": "Nottingham Forest",
-        "ELO": 1611.798424375141,
+        "Team": "Brighton",
+        "ELO": 1829.21312925116,
+        "Wins": 4,
+        "Losses": 1,
+        "Draws": 1,
+        "GoalsFor": 11,
+        "GoalsAgainst": 5
+    },
+    {
+        "Team": "Crystal Palace",
+        "ELO": 1750.0632713141943,
         "Wins": 1,
         "Losses": 2,
-        "Draws": 1,
-        "GoalsFor": 1,
+        "Draws": 3,
+        "GoalsFor": 7,
+        "GoalsAgainst": 9
+    },
+    {
+        "Team": "Everton",
+        "ELO": 1688.6306998222342,
+        "Wins": 0,
+        "Losses": 2,
+        "Draws": 4,
+        "GoalsFor": 2,
         "GoalsAgainst": 4
+    },
+    {
+        "Team": "Leeds United",
+        "ELO": 1720.1883429752718,
+        "Wins": 2,
+        "Losses": 2,
+        "Draws": 2,
+        "GoalsFor": 8,
+        "GoalsAgainst": 9
+    },
+    {
+        "Team": "Southampton",
+        "ELO": 1677.3247985274872,
+        "Wins": 2,
+        "Losses": 3,
+        "Draws": 1,
+        "GoalsFor": 7,
+        "GoalsAgainst": 10
+    },
+    {
+        "Team": "Bournemouth",
+        "ELO": 1663.3746368636573,
+        "Wins": 2,
+        "Losses": 3,
+        "Draws": 1,
+        "GoalsFor": 5,
+        "GoalsAgainst": 18
+    },
+    {
+        "Team": "Fulham",
+        "ELO": 1697.3378458345453,
+        "Wins": 2,
+        "Losses": 2,
+        "Draws": 2,
+        "GoalsFor": 9,
+        "GoalsAgainst": 9
+    },
+    {
+        "Team": "Nottingham Forest",
+        "ELO": 1585.3627968721278,
+        "Wins": 1,
+        "Losses": 4,
+        "Draws": 1,
+        "GoalsFor": 3,
+        "GoalsAgainst": 13
     }
 ]

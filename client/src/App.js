@@ -21,8 +21,8 @@ function App() {
     setPage("viewSimulateGame");
   }
 
-  const menuButtonGroup = (
-    <div className="btn-group">
+  const topNavBar = (
+    <div className="topnav">
       <button onClick={teamStatsClicked}>View a Team's Stats</button>
       <button onClick={predictGameClicked}>Predict a Game Result</button>
       <button onClick={statTableClicked}>View Full Stats Table</button>
@@ -36,8 +36,8 @@ function App() {
     return (
       <div className="App">     
         <header className="App-header">
+          {topNavBar}
           <h1> Full Team Stats </h1>
-          {menuButtonGroup}
           <TeamStatsSelect />
         </header>
       </div>
@@ -46,8 +46,8 @@ function App() {
     return(
       <div className="App">     
         <header className="App-header">
+          {topNavBar}
           <h1>Predict A Game</h1>
-          {menuButtonGroup}
           <PredictGame />
         </header>
       </div>
@@ -56,8 +56,9 @@ function App() {
     return(
       <div className="App">     
         <header className="App-header">
+          {topNavBar}
+          <br />
           <h1>Full League Table</h1>
-          {menuButtonGroup}
           <StatTable />
         </header>
       </div>
@@ -66,8 +67,8 @@ function App() {
     return(
       <div className="App">     
         <header className="App-header">
+          {topNavBar}
           <h1>Simulate a Game</h1>
-          {menuButtonGroup}
           <SimulateGame />
         </header>
       </div>
@@ -76,9 +77,8 @@ function App() {
     return (
       <div className="app">
         <header className="App-header">
-          <br/>
+          {topNavBar}
           <h1>Home Page</h1>
-          {menuButtonGroup}
         </header>
       </div>
     );

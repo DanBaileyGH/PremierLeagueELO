@@ -17,12 +17,23 @@
   color: #61dafb;
 }
 
-.btn-group button{
-  width: 200px;
-  padding: 10px 24px;
-  margin: px;
-  cursor: pointer; 
+.topnav {
+  background-color: #131313;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topnav button{
   float: left;
+  padding: 12px;
+  width: 25%;
+  background: none!important;
+  border: none;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .dropdown {
