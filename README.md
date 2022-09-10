@@ -1,4 +1,4 @@
-# expresselo
+# PremierLeagueELO
 
 Web app created using ReactJS frontend and node/express backend.
 
