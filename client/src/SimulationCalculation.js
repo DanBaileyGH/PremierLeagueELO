@@ -20,7 +20,7 @@ function SimulationCalculation(props) {
         fetchPrediction(props);
     }
 
-    if(!result) return <p>Loading...</p>;
+    if(!result) return <p>Loading...</p>; //if api data hasnt loaded yet dont send component
 
     return (
         <div>

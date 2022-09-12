@@ -23,7 +23,7 @@ function TeamStats(props) {
         await setTeamStats(response.data);
     }
 
-    if (!teamStats) return <p>Loading...</p>;
+    if (!teamStats) return <p>Loading...</p>; //if api data hasnt loaded yet dont send component
 
     return(
         <div>

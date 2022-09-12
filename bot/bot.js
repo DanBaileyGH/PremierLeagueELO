@@ -6,6 +6,7 @@ const fs = require('fs');
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 const path = require('path');
+const config = require('./config.json');
 
 client.on('ready', function (evt) {
     console.log('ready');
@@ -27,7 +28,7 @@ for (const file of commandFiles) {
     };
 }
 
-client.login('MTAwODEzMTU1MDM1NDg3MDQyMg.GVxooy.vM9QAbUtgv_H6xi2y-z8luSRM5dToWgU9HXMkM');
+client.login(config.BOT_TOKEN);
 
 client.on('messageCreate', async message => {
     if (!message.content.startsWith(prefix)) return;

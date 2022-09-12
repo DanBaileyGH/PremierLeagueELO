@@ -32,6 +32,7 @@ function App() {
 
   console.log(page);
 
+  //must be a better way to do this
   if (page === "viewTeamStats") {
     return (
       <div className="App">     

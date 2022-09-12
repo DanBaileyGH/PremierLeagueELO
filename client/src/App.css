@@ -28,12 +28,16 @@
   float: left;
   padding: 12px;
   width: 25%;
-  background: none!important;
+  background: none;
   border: none;
   color: #FFF;
   font-weight: bold;
   font-size: 20px;
   cursor: pointer;
+}
+
+.topnav button:hover {
+  background: #aaa;
 }
 
 .dropdown {
@@ -78,6 +82,7 @@ th {
 h2 {
   font-size: 25pt;
   margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 p {

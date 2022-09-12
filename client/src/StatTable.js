@@ -26,7 +26,7 @@ function PredictGame() {
     }
 
     async function reverseTable() {
-        let teamsArray = [...teams]; //create new array instead of mutating old one to force re render
+        let teamsArray = [...teams]; //create new array instead of mutating old one to force re-render
         let teamsReversed = await teamsArray.reverse();
         console.log(teamsReversed);
         setTeams(teamsReversed);
