@@ -12,6 +12,8 @@ const globalFunctions = require(`${commandPath}/globalFunctions.js`);
 const sortCommand = require(`${commandPath}/table.js`);
 const simulateCommand = require(`${commandPath}/simulategame.js`);
 
+app.use(express.static(path.resolve(__dirname, '../client/build')));
+
 app.get("/allTeamsList", async(req, res) => {
     let data = await globalFunctions.getAllTeams();
     console.log("all teams fetched");
@@ -36,6 +38,10 @@ app.get("/sorted/:stat", async (req, res) => {
 app.get("/simulate/:args", async(req, res) => {
     let data = await simulateCommand.simulateGame(req.params.args.split(","));
     res.json({data: data});
+});
+
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
 });
 
 app.listen(PORT, () => {
