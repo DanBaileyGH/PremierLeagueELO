@@ -1,4 +1,4 @@
-const globalFunctions = require('./globalFunctions.js');
+const globalFunctions = require('./globalfunctions.js');
 
 module.exports = {
     name: 'predict',

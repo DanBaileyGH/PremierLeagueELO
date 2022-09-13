@@ -8,7 +8,7 @@ let app = express();
 const commandPath = (path.dirname(__dirname) + "/commands");
 const teamCommand = require(`${commandPath}/team.js`);
 const predictCommand = require(`${commandPath}/predict.js`);
-const globalFunctions = require(`${commandPath}/globalFunctions.js`);
+const globalFunctions = require(`${commandPath}/globalfunctions.js`);
 const sortCommand = require(`${commandPath}/table.js`);
 const simulateCommand = require(`${commandPath}/simulategame.js`);
 

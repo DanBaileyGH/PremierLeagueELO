@@ -1,4 +1,4 @@
-const globalFunctions = require('./globalFunctions.js');
+const globalFunctions = require('./globalfunctions.js');
 
 //temp will be merged with addgame, intended to not change actual stats
 module.exports = {
