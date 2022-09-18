@@ -1,6 +1,8 @@
 # PremierLeagueELO
 
-https://premier-league-elo.herokuapp.com/
+https://premier-league-elo.herokuapp.com/ 
+
+(can take a small while to boot the first time it loads)
 
 Web app created using ReactJS frontend and node/express backend.
 
